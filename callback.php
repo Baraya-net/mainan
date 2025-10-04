@@ -4,8 +4,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 // --- KONFIGURASI PENTING ---
 // Pastikan konfigurasi ini SAMA PERSIS dengan di file CreateInvoice.php
-$merchantKey = "732B39FC61796845775D2C4FB05332AF"; // Ganti dengan Merchant Key Anda
-$merchantCode = "D0001"; // Ganti dengan Merchant Code Anda
+$merchantKey = "32d50d1ffd04213b5435877c65d6fd0e"; // Diambil dari screenshot Anda
+$merchantCode = "DS25268"; // Diambil dari screenshot Anda
 // --------------------------
 
 $duitkuConfig = new \Duitku\Config($merchantKey, $merchantCode);
@@ -49,3 +49,4 @@ try {
     http_response_code(400); // Bad Request
     echo $e->getMessage();
 }
+
